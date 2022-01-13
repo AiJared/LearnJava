@@ -9,14 +9,14 @@ public class Main {
         // 30
         age = 35;
         // We can copy the value assigned to one variable on another variable as shown below
-        byte myAge = 30; // byte data type takes 1 byte of the memory
+        byte myAge = 30; // byte data type takes 1 byte of the memory and range [-127, 127]
         byte herAge = myAge;
-        int items = 2; // int type takes 4 bytes and can hold millions of numbers
-        long viewsCount = 3_123_456_789L; // long type takes 8 bytes of memory and can hold up to 2 billion no.s
-        float price = 10.99F; // float type takes 2 bytes
-        double converter = 12.97;// takes 4 bytes
-        char letter = 'A';
-        boolean isEligible = true;
+        int items = 2; // int type takes 4 bytes and can hold 2 billion of numbers [-2B, 2B]
+        long viewsCount = 3_123_456_789L; // long type takes 8 bytes of memory and can hold over 2 billion no.s
+        float price = 10.99F; // float type takes 4 bytes
+        double converter = 12.97;// takes 8 bytes
+        char letter = 'A'; // 2 bytes A, B, C
+        boolean isEligible = true; // 1 byte true or false
         System.out.println(age);
         System.out.println(herAge);
         System.out.println(items);
